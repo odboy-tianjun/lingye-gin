@@ -1,0 +1,21 @@
+app:
+  mode: debug
+  name: LingYeGin
+  # MD5 SHA256
+  secret: 878bb8ef8807b5ddbcbddbf909e5526262cf74a54fb523cee17e5b80a1b7510d
+
+server:
+  port: 8088
+  api:
+    expiry: 120
+
+log:
+  file:
+    path: ../logs
+    name: lingyeGin.log
+  level: debug
+
+redis:
+  addr: localhost:6379
+  passwd:
+  database: 10
