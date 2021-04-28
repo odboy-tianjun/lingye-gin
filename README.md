@@ -56,9 +56,10 @@ go env -w GOSUMDB="sum.golang.google.cn"
 #### 使用说明
 - 配置GOPATH
   - Preferences | Go | GOPATH | Project GOPATH
-    - add /usr/local/gitee/lingye-go-base/src (这个路径以你本地的路径为准)
+    - add /usr/local/gitee/lingye-gin/src (这个路径以你本地的路径为准)
     - Index entire GOPATH, 打勾
     
-- 转到src下，执行命令: go mod tidy, 安装依赖包
+- 如果没有go.mod文件, 执行：go mod init lingye-gin
+- 执行：go mod tidy, 下载依赖包
 - 运行配置
 ![avatar](./doc/images/build_config.png)
